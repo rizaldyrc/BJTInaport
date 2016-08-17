@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://src/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://src/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://src/">
+      <s:element name="GetPkkByCabangSubs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="kd_cabang" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPkkByCabangSubsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPkkByCabangSubsResult" type="tns:ArrayOfPkk" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPkk">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="pkk" nillable="true" type="tns:pkk" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="pkk">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="statusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="statusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NO_PPKB1A" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOMOR_PKK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAKHODA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KODE_KAPAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TANDA_PENDAFTARAN_KAPAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAMA_KAPAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BENDERA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAMA_BENDERA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DRT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GRT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LOA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DRMAX" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DRDEPAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DRBELAKANG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DRTENGAH" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CALL_SIGN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMO_NUMBER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KODE_PEL_ASAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAMA_PEL_ASAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KODE_PEL_TUJUAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAMA_PEL_TUJUAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TANGGAL_ETA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JAM_ETA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TANGGAL_ETD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JAM_ETD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JENIS_BARANG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JENIS_KAPAL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JENIS_BARANG_LAIN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JENIS_BARANG_LAIN_B" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JENIS_BARANG_LAIN_M" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AGEN_PELAYARAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DERMAGA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PENUMPANG_NAIK_TURUN_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PENUMPANG_NAIK_TURUN_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_BONGKAR_ISI_40" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_BONGKAR_ISI_20" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_BONGKAR_ISI_40_EMPTY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_BONGKAR_ISI_20_EMPTY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_MUAT_ISI_40" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_MUAT_ISI_20" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_MUAT_ISI_40_EMPTY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONTAINER_MUAT_ISI_20_EMPTY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_CAMPUR_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_CAMPUR_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_KARUNG_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_KARUNG_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_CURAH_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_CURAH_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_CAIR_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_CAIR_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_BERBAHAYA_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CARGO_BARANG_BERBAHAYA_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JUMLAH_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JUMLAH_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEWAN_NAIK_TURUN_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HEWAN_NAIK_TURUN_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATED_DATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PORTCODE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetRkbmByPkkSubs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomor_pkk" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRkbmByPkkSubsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRkbmByPkkSubsResult" type="tns:ArrayOfRkbm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRkbm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="rkbm" nillable="true" type="tns:rkbm" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="rkbm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="statusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="statusMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOMOR_PKK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAMA_BARANG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BAHAYA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GANGGU" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KEGIATAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UNIT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TON" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="M3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PENYALURAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KADE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PBM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NPWP_PBM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CONSIGNEE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SHIPPER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NPWP_SHIPPER" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BLNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GANG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PALKA" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KODE_PELABUHAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NAMA_PELABUHAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NO_RKBM_MUAT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NO_RKBM_BONGKAR" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="KD_CABANG" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="req" type="tns:rpkro" />
+      <s:complexType name="rpkro">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="kodeDermaga" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tanggalRencana" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorRpkRo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorPkk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorRkbmMuat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorRkbmBongkar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="kegiatanBongkar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="kegiatanMuat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="komoditi" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorGudang" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="keterangan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tanggalMulaiTambat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jamSelesaiTambat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tanggalSelesaiTambat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="jamMulaiTambat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="kadeMeterAwal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="kadeMeterAkhir" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="portCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="return" type="tns:_return" />
+      <s:complexType name="_return">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="return" type="tns:ResponseMessagePkk" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ResponseMessagePkk">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nomorRkbmMuat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorRkbmBongkar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorPKK" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorRpkRo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorPpk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorPpkb" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorSpk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomorSpog" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="portCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="statusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="statusMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="nomorRkbmMuat" type="s:string" />
+      <s:element name="nomorRkbmBongkar" type="s:string" />
+      <s:element name="idTos" type="s:string" />
+      <s:element name="setStatusRkbmSubsResult" type="tns:_return" />
+      <s:element name="nomorPkk" type="s:string" />
+      <s:element name="id_desk" type="s:string" />
+      <s:element name="vmodul" type="s:string" />
+      <s:element name="vmodul_path" type="s:string" />
+      <s:element name="param1" type="s:string" />
+      <s:element name="param2" type="s:string" />
+      <s:element name="param3" type="s:string" />
+      <s:element name="paramdate1" type="s:string" />
+      <s:element name="paramdate2" type="s:string" />
+      <s:element name="paramdate3" type="s:string" />
+      <s:element name="entryLogDokumenResult" type="tns:_return" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPkkByCabangSubsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPkkByCabangSubs" />
+  </wsdl:message>
+  <wsdl:message name="GetPkkByCabangSubsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPkkByCabangSubsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPkkByCabangSubsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetRkbmByPkkSubsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRkbmByPkkSubs" />
+  </wsdl:message>
+  <wsdl:message name="GetRkbmByPkkSubsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRkbmByPkkSubsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRkbmByPkkSubsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="entryRpkRoSubsSoapIn">
+    <wsdl:part name="req" element="tns:req" />
+  </wsdl:message>
+  <wsdl:message name="entryRpkRoSubsSoapOut">
+    <wsdl:part name="entryRpkRoSubsResult" element="tns:return" />
+  </wsdl:message>
+  <wsdl:message name="entryRpkRoSubsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="setStatusRkbmSubsSoapIn">
+    <wsdl:part name="nomorRkbmMuat" element="tns:nomorRkbmMuat" />
+    <wsdl:part name="nomorRkbmBongkar" element="tns:nomorRkbmBongkar" />
+    <wsdl:part name="idTos" element="tns:idTos" />
+  </wsdl:message>
+  <wsdl:message name="setStatusRkbmSubsSoapOut">
+    <wsdl:part name="setStatusRkbmSubsResult" element="tns:setStatusRkbmSubsResult" />
+  </wsdl:message>
+  <wsdl:message name="setStatusRkbmSubsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="entryLogDokumenSoapIn">
+    <wsdl:part name="nomorPkk" element="tns:nomorPkk" />
+    <wsdl:part name="id_desk" element="tns:id_desk" />
+    <wsdl:part name="vmodul" element="tns:vmodul" />
+    <wsdl:part name="vmodul_path" element="tns:vmodul_path" />
+    <wsdl:part name="param1" element="tns:param1" />
+    <wsdl:part name="param2" element="tns:param2" />
+    <wsdl:part name="param3" element="tns:param3" />
+    <wsdl:part name="paramdate1" element="tns:paramdate1" />
+    <wsdl:part name="paramdate2" element="tns:paramdate2" />
+    <wsdl:part name="paramdate3" element="tns:paramdate3" />
+  </wsdl:message>
+  <wsdl:message name="entryLogDokumenSoapOut">
+    <wsdl:part name="entryLogDokumenResult" element="tns:entryLogDokumenResult" />
+  </wsdl:message>
+  <wsdl:message name="entryLogDokumenAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="inaportserviceSoap">
+    <wsdl:operation name="GetPkkByCabangSubs">
+      <wsdl:input message="tns:GetPkkByCabangSubsSoapIn" />
+      <wsdl:output message="tns:GetPkkByCabangSubsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRkbmByPkkSubs">
+      <wsdl:input message="tns:GetRkbmByPkkSubsSoapIn" />
+      <wsdl:output message="tns:GetRkbmByPkkSubsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="entryRpkRoSubs">
+      <wsdl:input message="tns:entryRpkRoSubsSoapIn" />
+      <wsdl:output message="tns:entryRpkRoSubsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setStatusRkbmSubs">
+      <wsdl:input message="tns:setStatusRkbmSubsSoapIn" />
+      <wsdl:output message="tns:setStatusRkbmSubsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="entryLogDokumen">
+      <wsdl:input message="tns:entryLogDokumenSoapIn" />
+      <wsdl:output message="tns:entryLogDokumenSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="inaportserviceSoap" type="tns:inaportserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPkkByCabangSubs">
+      <soap:operation soapAction="http://src/GetPkkByCabangSubs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPkkByCabangSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRkbmByPkkSubs">
+      <soap:operation soapAction="http://src/GetRkbmByPkkSubs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetRkbmByPkkSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entryRpkRoSubs">
+      <soap:operation soapAction="http://src/entryRpkRoSubs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:entryRpkRoSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setStatusRkbmSubs">
+      <soap:operation soapAction="http://src/setStatusRkbmSubs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:setStatusRkbmSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entryLogDokumen">
+      <soap:operation soapAction="http://src/entryLogDokumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:entryLogDokumenAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="inaportserviceSoap12" type="tns:inaportserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPkkByCabangSubs">
+      <soap12:operation soapAction="http://src/GetPkkByCabangSubs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPkkByCabangSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRkbmByPkkSubs">
+      <soap12:operation soapAction="http://src/GetRkbmByPkkSubs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetRkbmByPkkSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entryRpkRoSubs">
+      <soap12:operation soapAction="http://src/entryRpkRoSubs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:entryRpkRoSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setStatusRkbmSubs">
+      <soap12:operation soapAction="http://src/setStatusRkbmSubs" style="document" soapActionRequired="true" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:setStatusRkbmSubsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entryLogDokumen">
+      <soap12:operation soapAction="http://src/entryLogDokumen" style="document" soapActionRequired="true" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:entryLogDokumenAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="inaportservice">
+    <wsdl:port name="inaportserviceSoap" binding="tns:inaportserviceSoap">
+      <soap:address location="http://103.41.110.31:82/inaportservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="inaportserviceSoap12" binding="tns:inaportserviceSoap12">
+      <soap12:address location="http://103.41.110.31:82/inaportservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

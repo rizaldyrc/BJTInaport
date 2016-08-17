@@ -1,0 +1,13 @@
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.csprojResolveAssemblyReference.cache
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\MainWindow.baml
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\MainWindow.g.cs
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\App.g.cs
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI_MarkupCompile.cache
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.g.resources
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.Properties.Resources.resources
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.csproj.GenerateResource.Cache
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.exe.config
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.exe
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.pdb
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.exe
+C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.pdb
