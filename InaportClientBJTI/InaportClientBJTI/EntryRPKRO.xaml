@@ -1,0 +1,255 @@
+﻿<Window x:Class="InaportClientBJTI.EntryRPKRO"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:model="clr-namespace:InaportClientBJTI.ViewModel"
+        xmlns:helper="clr-namespace:InaportClientBJTI.Helper"
+        Title="MainWindow" Height="800" Width="1100">
+
+    <Window.Resources>
+        <model:ViewModelRPKRO x:Key="rpkro"/>
+        <ControlTemplate x:Key="validationTemplate">
+            <DockPanel>
+                <TextBlock Foreground="Red" FontSize="25" Text="*" DockPanel.Dock="Right"></TextBlock>
+                <AdornedElementPlaceholder/>
+            </DockPanel>
+        </ControlTemplate>
+
+        <Style x:Key="InputControlErrors" TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="ToolTip"    
+                        Value="{Binding RelativeSource={x:Static RelativeSource.Self},    
+                              Path=(Validation.Errors)[0].ErrorContent}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Height="80"></StackPanel>
+            <Border BorderBrush="Gray" BorderThickness="2">
+                <Grid Width="400" DockPanel.Dock="Left" HorizontalAlignment="Left">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="15" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.ColumnSpan="3" Content="Data RPK-RO" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold"/>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Kode Dermaga"/>
+                    <Label Grid.Row="2" Grid.Column="0" Content="Nomor Gudang"/>
+                    <Label Grid.Row="3" Grid.Column="0" Content="Nomor RPK-RO"/>
+                    <Label Grid.Row="4" Grid.Column="0" Content="Nomor PKK"/>
+                    <Label Grid.Row="5" Grid.Column="0" Content="Nomor RKBM MUAT"/>
+                    <Label Grid.Row="6" Grid.Column="0" Content="Nomor RKBM BONGKAR"/>
+                    <Label Grid.Row="7" Grid.Column="0" Content="Tanggal Perencanaan"/>
+                    <Label Grid.Row="8" Grid.Column="0" Content="Jml. Bongkar"/>
+                    <Label Grid.Row="9" Grid.Column="0" Content="Jml. Muat"/>
+                    <Label Grid.Row="10" Grid.Column="0" Content="Komoditas"/>
+                    <Label Grid.Row="11" Grid.Column="0" Content="Berthing Date"/>
+                    <Label Grid.Row="12" Grid.Column="0" Content="Departure Date"/>
+                    <Label Grid.Row="13" Grid.Column="0" Content="Kade from"/>
+                    <Label Grid.Row="14" Grid.Column="0" Content="Kade to"/>
+                    <Label Grid.Row="15" Grid.Column="0" Content="Status"/>
+                    <Label Grid.Row="1" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="2" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="3" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="4" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="5" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="6" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="7" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="8" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="9" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="10" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="11" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="12" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="13" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="14" Grid.Column="1" Content=":"/>
+                    <Label Grid.Row="15" Grid.Column="1" Content=":"/>
+                    <TextBox Grid.Row="1" Grid.Column="2" Margin="0 2 5 2" x:Name="kode_dermaga" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="kode_Dermaga" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="2" Grid.Column="2" Margin="0 2 5 2" x:Name="no_gudang" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="nomor_Gudang" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="2" Margin="0 2 5 2" x:Name="rpkro" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="nomor_RPKRO" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="4" Grid.Column="2" Margin="0 2 5 2" x:Name="pkk" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="nomor_PKK" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="5" Grid.Column="2" Margin="0 2 5 2" x:Name="rkbm_load" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="nomor_RKBM_Muat" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="6" Grid.Column="2" Margin="0 2 5 2"  x:Name="rkbm_disc" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="nomor_RKBM_Bongkar" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <xctk:DateTimePicker Grid.Row="7" Grid.Column="2" Margin="0 2 5 2" Format="Custom" FormatString="dd-M-yyyy hh:mm" x:Name="plan_date"/>
+                    <TextBox Grid.Row="8" Grid.Column="2" Margin="0 2 5 2" x:Name="jml_disc" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="jml_Disc" StringFormat="{}{0:#,0}" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="9" Grid.Column="2" Margin="0 2 5 2" x:Name="jml_load" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="jml_Load" StringFormat="{}{0:#,0}" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="10" Grid.Column="2" Margin="0 2 5 2" x:Name="komoditas" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="commodity" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <xctk:DateTimePicker Grid.Row="11" Grid.Column="2" Margin="0 2 5 2" Format="Custom" FormatString="dd-M-yyyy hh:mm" x:Name="berthing_date"/>
+                    <xctk:DateTimePicker Grid.Row="12" Grid.Column="2" Margin="0 2 5 2" Format="Custom" FormatString="dd-M-yyyy hh:mm" x:Name="departure_date"/>
+                    <TextBox Grid.Row="13" Grid.Column="2" Margin="0 2 5 2" x:Name="kade_from" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="kade_From" StringFormat="{}{0:#,0}" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule ValidatesOnTargetUpdated="True"></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="14" Grid.Column="2" Margin="0 2 5 2" x:Name="kade_to" 
+                         Validation.ErrorTemplate="{StaticResource validationTemplate}"
+                         Style="{StaticResource InputControlErrors}">
+                        <TextBox.Text>
+                            <Binding Path="kade_To" StringFormat="{}{0:#,0}" Source="{StaticResource rpkro}" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <helper:RequiredValidationRule></helper:RequiredValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <TextBox Grid.Row="15" Grid.Column="2" Margin="0 2 5 2" x:Name="status"/>
+                    <Button Grid.Row="16" Grid.Column="2" Content="Clear" HorizontalAlignment="Left" Margin="0 5 0 5" VerticalAlignment="Top" Width="90" x:Name="btClear"/>
+                    <Button Grid.Row="16" Grid.Column="2" Content="Save" HorizontalAlignment="Right" Margin="0,5,5,6" Width="90" x:Name="btSave" Click="btSave_Click">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="IsEnabled" Value="false" />
+                                <Style.Triggers>
+                                    <MultiDataTrigger>
+                                        <MultiDataTrigger.Conditions>
+                                            <Condition Binding="{Binding ElementName=kode_dermaga, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=no_gudang, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=rpkro, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=pkk, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=rkbm_load, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=rkbm_disc, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=jml_disc, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=jml_load, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=komoditas, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=kade_from, Path=(Validation.HasError)}" Value="false" />
+                                            <Condition Binding="{Binding ElementName=kade_to, Path=(Validation.HasError)}" Value="false" />
+                                        </MultiDataTrigger.Conditions>
+                                        <Setter Property="IsEnabled" Value="true" />
+                                    </MultiDataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Grid>
+            </Border>
+            <Grid DockPanel.Dock="Right">
+                <TabControl HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="692">
+                    <TabItem Header="   Draft   ">
+                        <DataGrid Margin="0,0,0,-10" x:Name="dg_draft"/>
+                    </TabItem>
+                    <TabItem Header="Delivered Items">
+                        <DataGrid Margin="0,0,0,0" x:Name="dg_delivered"/>
+                    </TabItem>
+                </TabControl>
+                
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using InaportClientBJTI.Helper;
 
-namespace InaportClientBJTI.Model
+namespace InaportClientBJTI.ViewModel
 {
-    class ModelRPKRO
+    class ModelRPKRO_DB
     {
         DBTPKDHelper tpkd;
         DbCommand insert, update, delete, get;
-        public ModelRPKRO()
+        public ModelRPKRO_DB()
         {
             tpkd = new DBTPKDHelper();
         }

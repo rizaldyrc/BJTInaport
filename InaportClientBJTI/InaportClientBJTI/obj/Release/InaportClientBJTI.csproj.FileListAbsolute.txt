@@ -1,0 +1,7 @@
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\EntryRPKRO.g.cs
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\App.g.cs
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\InaportClientBJTI_MarkupCompile.cache
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\InaportClientBJTI_MarkupCompile.lref
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\InaportClientBJTI.exe
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Release\InaportClientBJTI.pdb

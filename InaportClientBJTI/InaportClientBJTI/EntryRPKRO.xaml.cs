@@ -11,17 +11,26 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xceed.Wpf.Toolkit;
+using InaportClientBJTI.ViewModel;
+using InaportClientBJTI.Helper;
 
 namespace InaportClientBJTI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EntryRPKRO : Window
     {
-        public MainWindow()
+
+        public EntryRPKRO()
         {
             InitializeComponent();
+        }
+
+        private void btSave_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

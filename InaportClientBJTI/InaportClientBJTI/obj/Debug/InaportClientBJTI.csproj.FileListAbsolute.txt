@@ -11,3 +11,36 @@ C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportCl
 C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.pdb
 C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.exe
 C:\Users\Panda\Documents\Visual Studio 2012\Projects\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.pdb
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\EntryRPKRO.g.cs
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\App.g.cs
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI_MarkupCompile.cache
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI_MarkupCompile.lref
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.exe
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.pdb
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.exe.config
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.exe
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\InaportClientBJTI.pdb
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\EntryRPKRO.baml
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.g.resources
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.Properties.Resources.resources
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.csproj.GenerateResource.Cache
+C:\Users\Rizaldy\Documents\GitHub\BJTInaport\InaportClientBJTI\InaportClientBJTI\obj\Debug\InaportClientBJTI.csprojResolveAssemblyReference.cache
