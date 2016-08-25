@@ -26,6 +26,9 @@ namespace InaportClientBJTI
         public EntryRPKRO()
         {
             InitializeComponent();
+            ModelRPKRO_DB modelRPKRO = new ModelRPKRO_DB();
+            List<ViewModelItemRPKRO> listItem = modelRPKRO.getRPKRO();
+            dg_draft.ItemsSource = listItem;
         }
 
         private void btSave_Click(object sender, RoutedEventArgs e)

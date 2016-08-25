@@ -88,6 +88,7 @@
     </ApplicationDefinition>
     <Compile Include="Helper\DBTPKDHelper.cs" />
     <Compile Include="Helper\RequiredValidationRule.cs" />
+    <Compile Include="ViewModel\ViewModelItemRPKRO.cs" />
     <Compile Include="ViewModel\ViewModelRPKRO.cs" />
     <Compile Include="Model\ModelRPKRO_DB.cs" />
     <Compile Include="Web References\StaggingPelindo3\Reference.cs">

@@ -16,7 +16,31 @@ namespace InaportClientBJTI.ViewModel
             tpkd = new DBTPKDHelper();
         }
 
-        public void addRPK(String kode_dermaga, String plan_date, String nomor_rpkro,
+        public List<ViewModelItemRPKRO> getRPKRO()
+        {
+            tpkd.establishConnection();
+            get = tpkd.Factory.CreateCommand();
+            get.Connection = tpkd.Connection;
+            get.CommandText = String.Format("select * from tpkd_rpkro where sent_status = 0");
+
+            DbTransaction trx = tpkd.Connection.BeginTransaction();
+            get.Transaction = trx;
+            DbDataReader dbReader = get.ExecuteReader();
+            List<ViewModelItemRPKRO> listItem = new List<ViewModelItemRPKRO>();
+            while (dbReader.Read())
+            {
+                ViewModelItemRPKRO item = new ViewModelItemRPKRO()
+                {
+                    kode_Dermaga = dbReader["KODE_DERMAGA"].ToString(),
+                    nomor_RPKRO = dbReader["NOMOR_RPKRO"].ToString()
+                };
+            }
+
+            tpkd.releaseConnection();
+            return listItem;
+        }
+
+        public void addRPKRO(String kode_dermaga, String plan_date, String nomor_rpkro,
                 String nomor_pkk, String nomor_rkbm_muat, String nomor_rkbm_bongkar, int jml_disc,
                 int jml_load, String commodity_code, String commodity, String nomor_gudang, 
                 String keterangan, String berthing_date, String departure_date, int kade_from,

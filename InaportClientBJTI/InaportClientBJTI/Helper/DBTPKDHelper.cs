@@ -27,8 +27,8 @@ namespace InaportClientBJTI.Helper
         {
             Factory = DbProviderFactories.GetFactory("System.Data.OracleClient");
             Connection = Factory.CreateConnection();
-            //Connection.ConnectionString = "Data Source=192.168.0.253:1521/orcl;User ID=tpkd;Password=tpkd;Unicode=True";
-            Connection.ConnectionString = "Data Source=localhost:1521/orcl;User ID=aura;Password=4ur4;Unicode=True";
+            Connection.ConnectionString = "Data Source=192.168.0.253:1521/orcl;User ID=tpkd;Password=tpkd;Unicode=True";
+            //Connection.ConnectionString = "Data Source=localhost:1521/orcl;User ID=aura;Password=4ur4;Unicode=True";
             Connection.Open();
         }
 
